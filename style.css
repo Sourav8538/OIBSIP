@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/90/1c/ec/901cecca687b5a44d56ad823aa7005da.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+       /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,.15)),url(https://cdn.pixabay.com/photo/2021/08/21/16/57/victoria-memorial-6563224_960_720.jpg); */
+
+    /* background-color: aqua; */
+   
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(10, 5, 0);
+}
+nav:hover{
+   
+    background-color: blue;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    color: aqua;
+    animation:logo 10s infinite linear;
+}
+@keyframes logo {
+    0%{color: red;}
+    25%{color: #45ec0d;}
+    50%{color: aqua;}
+    75%{color: yellow;}
+    100%{color: blue;}
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: rgb(252, 252, 4);
+    font-weight: bold;
+}
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+section{
+ justify-content: center;
+}
+
+section h3{
+    font-size: 45px ;font-weight: 400;letter-spacing: 3px;
+    color: #0cd3e5  ;
+    text-shadow: 1px 1px 2px rgb(12, 13, 12);
+}
+section h1{
+    /* margin: 20px 0 20px 0; */
+    margin-bottom: 150px;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+    text-transform: capitalize;
+}
+section p{
+    font-size: 35px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px black;
+    
+    color: #1fdfb6;
+}
+section a{
+    padding :12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-bottom: 100px;
+
+}
+section .btnone{
+    background: #fff;
+    color:#000;
+}
+section .btntwo{
+    background: #0cd3e5;
+    color:#000; 
+}
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+       color:blue;
+       text-shadow: 1px 1px 1px black;
+}
+@keyframes changetext {
+    0%{content: "Victoria";}
+    10%{content: "Pricecep ghat";}
+    20%{content: "science City";}
+    30%{content: "Biswa Bangla Gate";}
+    40%{content: "Howrah Bridge";}
+    50%{content: "Nicco Park";}
+    60%{content: "Eden Garden";}
+    70%{content: "Eco Park";}
+    80%{content: "Birla Muzium";}
+    90%{content: "Daksineswar";}
+    100%{content: "Bidhansabha";} 
+}
+footer{
+    height: auto;
+    width :100%;
+    background-color: blueviolet;
+}
+footer{
+    background-color: rgb(61, 58, 58);
+    height: 70px;
+    padding: 20px;
+text-align: center;
+font-size: 25px;
+color: #0cd3e5;
+}
